@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Title of the document</title>
+<style type="text/css">
+
+*{
+    /* margin: 0px; */
+    padding: 0px;
+    box-sizing: border-box;
+}
+.body{
+    width: 90%;
+    margin: auto;
+}
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+tr{
+	border: solid 1px black;
+}
+table{
+	border: 1px solid black;
+}
+table th{
+	border: 1px solid black;
+}
+table th tr{
+	border: 1px solid black;
+}
+table tr td{
+	border: 1px solid black;
+}
+</style>
+
+</head>
+
+<body>
+	<h1>Welcome to iPhone On-line Store</h1>
+	<form action="/signup" method="post">
+	<label>Buyer's Name:</label>
+	<input type="text" name="name" style="margin-left: 54px;">
+	<br>
+	<br>
+	<label>Apt., Bldg., Street:</label>
+	<input type="text" name="street"  style="margin-left: 28px;">
+	<br>	
+	<br>
+	<label>City, Emirate,P.O Box:</label>
+	<input type="text" name="city" style="margin-left: 2px;">
+	<div style="margin-top: 2%;">
+		<table>
+			<tr>
+				<th>Product</th>
+				<th>Picture</th>
+				<th>Price</th>
+				<th>Quantity</th>
+			</tr>
+			<tbody>
+				<tr>
+					<td>AIAIAI TMA-1 Headphones with Remote+Mic</td>
+					<td><img src="img/headphone.png" width="49px" alt=""></td>
+					<td>AED 799.00</td>
+					<td><input type="number" name="accessory1" value="1" > </td>
+				</tr>
+				<tr>
+					<td>Uncommon Defelector Case for iphone 4</td>
+					<td><img src="img/case.png" width="45px" alt=""></td>
+					<td>AED 149.95</td>
+					<td><input type="number" name="accessory2" value="1"> </td>
+				</tr>
+				<tr>
+					<td>Wireless Bluetooth Headphones</td>
+					<td><img src="img/headphone1.png" width="45px" alt=""></td>
+					<td>AED 1,199.00</td>
+					<td><input type="number" name="accessory3" value="1"> </td>
+				</tr>
+				<tr>
+					<td>Philips DS3880W AirPlay Speaker</td>
+					<td><img src="img/Philips.png" width="45px" alt=""></td>
+					<td>AED 1,539.00</td>
+					<td><input type="number" name="accessory4" value="1"> </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div style="margin-top: 2%;">
+		<strong style="font-size: 23px;">Payment Method</strong>
+		<div style="margin-top:1%;">
+			<input type="radio" name="payment" value="Visa" checked="">
+			<label>Visa</label>
+		</div>
+		<div>
+			<input type="radio" name="payment" value="Master Card">
+			<label>Master Card</label>
+		</div>
+		<div>
+			<input type="radio" name="payment" value="Discover">
+			<label>Discover</label>
+		</div>
+		<div>
+			<input type="radio" name="payment" value="Check">
+			<label>Check</label>
+		</div >
+		<div style="margin-top:1%;">
+			<input type="submit" value="Submit Order">
+			<button>Clear Order Form</button>
+		</div>
+	</div>
+	</form>
+</body>
+
+</html>
